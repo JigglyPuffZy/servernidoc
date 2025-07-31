@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import OpenAI from 'openai';
-
+import 'dotenv/config';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Initialize OpenAI API
 const openai = new OpenAI({
-  apiKey: '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'
+  apiKey: process.env.OPENAI_KEY
 });
 
 // System prompt for the veterinary assistant
