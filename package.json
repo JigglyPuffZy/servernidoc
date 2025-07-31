@@ -1,23 +1,16 @@
 {
   "name": "doc-santi-server",
   "version": "1.0.0",
-  "description": "Express server for Doc Santi veterinary AI assistant",
-  "main": "server.js",
+  "description": "Vercel serverless function for Doc Santi veterinary AI assistant",
+  "main": "api/chat.js",
   "type": "module",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
-  },
+  "scripts": {},
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
     "openai": "^4.104.0"
   },
   "keywords": [
-    "express",
-    "server",
+    "vercel",
+    "serverless",
     "ai",
     "veterinary"
   ],
